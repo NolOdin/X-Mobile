@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {getPosts} from './actions/products'
 import SetFructs from './components/SetFructs.js'
-import UpdateProduct from './components/UpdateProduct'
 import Productss from './components/Productss'
 import { useDispatch } from 'react-redux'
 import './App.css';
@@ -30,7 +29,7 @@ const App  = () => {
         <ul class="nav-links">
             <a href="/" id='menu-item'><li>Дом</li></a>
             <a href="/create" id='menu-item'><li>Создать</li></a>
-            <a href="/" id='menu-item'><li>Профиль</li></a>
+            <a href="#" id='menu-item'><li>Профиль</li></a>
 
         </ul>
     </div>
@@ -42,7 +41,7 @@ const App  = () => {
           
             <Route exact path="/" component={Productss}   />
             <Route exact path="/create" component={SetFructs} />
-            <Route exact path="/update/:productsId" component={UpdateProduct}   />
+            
             
 
           </Switch>
