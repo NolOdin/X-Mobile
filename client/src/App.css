@@ -1,0 +1,22 @@
+
+.nav-link {
+  font-size: 20px;
+  padding-right: 400px;
+}
+.form-control {
+
+}
+#nav-id {
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card-group {
+  padding-top:50px;
+}
+.navbar-nav {
+  padding-right: 10rem;
+}
+.navbar-brand {
+  padding-left: 40px;
+}
+

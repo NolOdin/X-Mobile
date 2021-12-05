@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.menu-wrapper {
+  margin-top: 30px;
+  width: 250px;
+  margin-left:20px;
+}
+
+#x-id {
+    color: red;
+}
+.menu {
+  position: relative;
+  width: 36px;
+  height: 6px;
+  background-color: #0057ff;
+  user-select: none;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  margin: 5px;
+  color: #0057ff;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.menu label {
+  cursor: pointer;
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  line-height: 30px;
+  top: -12px;
+  left: 48px;
+}
+.menu:hover > ul.nav-links, .menu.open > ul.nav-links {
+  transition: all 0.25s ease-in-out;
+  opacity: 1;
+  width: 180px;
+  transform: translateX(15px);
+  pointer-events: auto;
+}
+.menu:after, .menu:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  background-color: #0057ff;
+  transition: all 0.25s ease-in-out;
+}
+.menu:after {
+  top: 12px;
+}
+.menu:before {
+  top: -12px;
+}
+.menu:hover, .menu.open {
+  background-color: transparent;
+}
+.menu:hover::after, .menu:hover::before, .menu.open::after, .menu.open::before {
+  transition: all 0.3s ease-in-out;
+  width: 18px;
+}
+.menu:hover::after, .menu.open::after {
+  transform: translate(3px, -7px) rotate(405deg);
+}
+.menu:hover::before, .menu.open::before {
+  transform: translate(12px, 17px) rotate(-405deg);
+}
+.menu ul.nav-links {
+  margin: 0;
+  padding: 36px 0 0 0;
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+.menu ul.nav-links li {
+  width: 100%;
+  padding: 4px 8px;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  border-left: 2px solid red;
+}
+.menu ul.nav-links li:hover, .menu ul.nav-links li.active {
+  color: red;
+  border-left: 2px solid red;
+}
+#menu-item {
+    color: #0057ff;
+}

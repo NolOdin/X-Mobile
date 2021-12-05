@@ -1,0 +1,24 @@
+.btn-danger  {
+	float: right;
+	
+}
+
+.btn.btn-secondary {
+
+	justify-content:center;
+}
+
+.ant-row {
+	width: 900px;
+	margin-left: 200px;
+}
+#card-id {
+	padding-top: 15px;
+}
+.search-bar {
+	margin-left: 0px;
+}
+hr {
+	width: 900px;
+	padding-left: 300px;
+}
